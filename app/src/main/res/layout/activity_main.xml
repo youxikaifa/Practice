@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.jin.practice.MainActivity_">
+
+    <FrameLayout
+        android:id="@+id/contentPanel"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="com.example.jin.practice.ui.HomeFragment_"
+            >
+        </fragment>
+    </FrameLayout>
+
+
+    <me.majiajie.pagerbottomtabstrip.PagerBottomTabLayout
+        android:id="@+id/tab"
+        app:elevation="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        />
+</LinearLayout>
